@@ -1,0 +1,25 @@
+<div (window:scroll)="closeToggle()">
+   <div (click)="onToggleHeader()" (click)="onToggleMenu()" [ngClass]="{'fa-times': toggleMenu}" id="menu-bars" class="fas fa-bars"></div>
+   
+   <header  [ngClass]="{active: toggleHeader}">
+   
+       <a href="#" class="logo"> <span>Bekkoshkarov</span> Vladislav </a>
+   
+       <nav class="navbar">
+           <a href="#home">home</a>
+           <a href="#about">about</a>
+           <a href="#service">service</a>
+           <a href="#experience">experience</a>
+           <a href="#portfolio">portfolio</a>
+           <a href="#contact">contact</a>
+       </nav>
+   
+       <div class="follow">
+           <a href="#" class="fab fa-facebook-f"></a>
+           <a href="#" class="fab fa-twitter"></a>
+           <a href="#" class="fab fa-instagram"></a>
+           <a href="#" class="fab fa-linkedin"></a>
+       </div>
+   
+   </header>
+</div>
