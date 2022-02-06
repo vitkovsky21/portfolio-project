@@ -1,7 +1,10 @@
 <div (window:scroll)="closeToggle()">
    <div (click)="onToggleHeader()" (click)="onToggleMenu()" [ngClass]="{'fa-times': toggleMenu}" id="menu-bars" class="fas fa-bars"></div>
    
-   <header  [ngClass]="{active: toggleHeader}">
+   <header [ngClass]="{active: toggleHeader}">
+
+       <div class="cursor-1" #cursor1></div>
+       <div class="cursor-2" #cursor2></div>
    
        <a href="#" class="logo"> <span>Bekkoshkarov</span> Vladislav </a>
    
