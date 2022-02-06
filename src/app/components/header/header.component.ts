@@ -10,7 +10,7 @@ export class HeaderComponent implements OnInit {
   @ViewChild('cursor1') cursor1 = {} as ElementRef;
   @ViewChild('cursor2') cursor2 = {} as ElementRef;
 
-  constructor(private renderer: Renderer2) { }
+  constructor() { }
 
   ngOnInit(): void {
   }
