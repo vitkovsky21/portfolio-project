@@ -1,1 +1,19 @@
-<p>portfolio works!</p>
+<section class="portfolio" id="portfolio">
+
+    <h1 class="heading"> <span> my </span> portfolio </h1>
+
+    <div class="box-container" *ngFor="let site of sites; let i = index">
+
+        <div class="box">
+            <img src="{{site.image}}" alt="">
+            <h3> {{site.title}} </h3>
+            <div class="icons">
+                <a href="{{site.link}}" class="fas fa-link"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-search"></a>
+            </div>
+        </div>
+
+    </div>
+
+</section>

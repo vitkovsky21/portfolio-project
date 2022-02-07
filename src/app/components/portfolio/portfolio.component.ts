@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Site } from 'src/app/class/site';
+import { DataHandlerService } from 'src/app/service/data-handler.service';
 
 @Component({
   selector: 'app-portfolio',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PortfolioComponent implements OnInit {
 
-  constructor() { }
+  sites: Site[] = [];
+
+  constructor(private dataHandler: DataHandlerService) { }
 
   ngOnInit(): void {
+    this.dataHandler.sitesSubject.subscribe(sites => this.sites = sites);
   }
 
 }
