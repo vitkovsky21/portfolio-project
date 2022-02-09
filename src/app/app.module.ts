@@ -8,6 +8,9 @@ import { HeaderComponent } from './components/header/header.component';
 import { AboutComponent } from './components/about/about.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { DataHandlerService } from './service/data-handler.service';
+import { ContactsComponent } from './components/contacts/contacts.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -16,10 +19,13 @@ import { DataHandlerService } from './service/data-handler.service';
     HeaderComponent,
     AboutComponent,
     PortfolioComponent,
+    ContactsComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [
     DataHandlerService],
