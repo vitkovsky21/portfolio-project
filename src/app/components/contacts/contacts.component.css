@@ -94,6 +94,6 @@
 }
 
 .contact .row form:invalid .btn:hover{
-    cursor: unset;
+    cursor: not-allowed;
     letter-spacing: 0rem;
 }
