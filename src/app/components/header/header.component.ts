@@ -7,8 +7,8 @@ import { Component, ElementRef, HostListener, OnInit,  ViewChild, } from '@angul
 })
 export class HeaderComponent implements OnInit {
 
-  @ViewChild('cursor1') cursor1 = {} as ElementRef;
-  @ViewChild('cursor2') cursor2 = {} as ElementRef;
+//  @ViewChild('cursor1') cursor1 = {} as ElementRef;
+//  @ViewChild('cursor2') cursor2 = {} as ElementRef;
 
   constructor() { }
 
@@ -31,12 +31,12 @@ export class HeaderComponent implements OnInit {
     this.toggleMenu = false;
   }
 
-  @HostListener('document:mousemove', ['$event'])
-
-  onMouseMove(e: MouseEvent) {
-    this.cursor1.nativeElement.style.top = e.pageY + 'px';
-    this.cursor1.nativeElement.style.left = e.pageX + 'px';
-    this.cursor2.nativeElement.style.top = e.pageY + 'px';
-    this.cursor2.nativeElement.style.left = e.pageX + 'px';
-  }
+//  @HostListener('document:mousemove', ['$event'])
+//
+//  onMouseMove(e: MouseEvent) {
+//    this.cursor1.nativeElement.style.top = e.pageY + 'px';
+//    this.cursor1.nativeElement.style.left = e.pageX + 'px';
+//    this.cursor2.nativeElement.style.top = e.pageY + 'px';
+//    this.cursor2.nativeElement.style.left = e.pageX + 'px';
+//  }
 }
