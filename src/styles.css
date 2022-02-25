@@ -12,6 +12,7 @@
     text-decoration: none;
     transition: all .2s linear;
     line-height: 1.5;
+    max-width: 100%;
 }
 
 html{
@@ -23,6 +24,7 @@ html{
 body{
     background: #fcf2e8;
     padding-left: 30rem;
+    max-width: 100%;
 }
 
 section{
