@@ -1,6 +1,33 @@
+<section class="services">
+
+    <h1 class="heading-title"> Frameworks </h1>
+ 
+    <div class="box-container" (click)="scroll(target)">
+ 
+       <div class="box" (click)="sortByCategories(0)">
+          <img src="../assets/images/icon-00.png" alt="image">
+          <h3>Vue.js</h3>
+       </div>
+       <div class="box" (click)="sortByCategories(1)">
+          <img src="../assets/images/icon-01.jpg" alt="image">
+          <h3>Angular</h3>
+       </div>
+       <div class="box" (click)="sortByCategories(2)">
+          <img src="../assets/images/icon-02.png" alt="image">
+          <h3>React</h3>
+       </div>
+       <div class="box" (click)="sortByCategories(3)">
+          <img src="../assets/images/icon-03.png" alt="image">
+          <h3>Other</h3>
+       </div>
+ 
+    </div>
+ 
+ </section>
+
 <section class="portfolio" id="portfolio">
 
-    <h1 class="heading"> <span> angular </span> websites </h1>
+    <h1 class="heading" #target> <span> </span> projects </h1>
 
     <div class="box-container" *ngFor="let site of sites; let i = index">
 
