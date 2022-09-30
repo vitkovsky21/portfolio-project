@@ -1,11 +1,9 @@
 export class Categories {
     id: number;
     name: string;
-    image: string;
 
-    constructor(id: number, name: string, image: string) {
+    constructor(id: number, name: string) {
         this.id = id;
         this.name = name;
-        this.image = image;
     }
 }
