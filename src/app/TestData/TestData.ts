@@ -85,14 +85,6 @@ export class TestData {
         },
         {
             id: 10, 
-            image: "../../assets/images/img-2.jpg", 
-            title: "Shopping Website", 
-            link: "https://portfolio-shoppingwebsite.web.app", 
-            github: "https://github.com/vitkovsky21/shopping-magazine",
-            category: TestData.categories[1]
-        },
-        {
-            id: 11, 
             image: "../../assets/images/img-5.jpg", 
             title: "My Portfolio Website :)", 
             link: "https://portfolio-vladb.web.app/", 
