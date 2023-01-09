@@ -12,6 +12,14 @@ export class TestData {
 
     static sites: Site[] = [
         {
+            id: 0, 
+            image: "../../assets/images/img-12.jpeg", 
+            title: "Valkyrie Adventure", 
+            link: "https://santa-barbara-18.ya-praktikum.tech/", 
+            github: "https://github.com/18-Santa-Barbara/fishing-game", 
+            category: TestData.categories[3]
+        },
+        {
             id: 1, 
             image: "../../assets/images/img-7.jpg", 
             title: "Parfumdelame Shop", 
