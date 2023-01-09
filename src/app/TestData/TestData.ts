@@ -23,7 +23,6 @@ export class TestData {
             id: 2, 
             image: "../../assets/images/img-11.jpeg", 
             title: "Highcharts Website", 
-            link: "https://highcharts-testing.web.app/", 
             github: "https://github.com/vitkovsky21/test-pr",
             category: TestData.categories[1]
         },
@@ -63,7 +62,6 @@ export class TestData {
             id: 7, 
             image: "../../assets/images/img-4.jpg", 
             title: "Course Assignment Project", 
-            link: "https://portfolio-courseassignment.web.app", 
             github: "https://github.com/vitkovsky21/conFusion",
             category: TestData.categories[1]
         },

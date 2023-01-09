@@ -35,7 +35,7 @@
             <img src="{{site.image}}" alt="">
             <h3> {{site.title}} </h3>
             <div class="icons">
-                <a target="_ blank" href="{{site.link}}" class="fas fa-link"></a>
+                <a *ngIf="site.link" target="_ blank" href="{{site.link}}" class="fas fa-link"></a>
                 <a target="_ blank" href="{{site.github}}" class="fab fa-github"></a>
             </div>
         </div>

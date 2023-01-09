@@ -4,7 +4,7 @@ export class Site {
     id: number;
     image: any;
     title: string;
-    link: any;
+    link?: any;
     github: any;
     category: Categories
 
