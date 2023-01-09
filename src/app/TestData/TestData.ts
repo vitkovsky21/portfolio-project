@@ -17,7 +17,7 @@ export class TestData {
             title: "Valkyrie Adventure", 
             link: "https://santa-barbara-18.ya-praktikum.tech/", 
             github: "https://github.com/18-Santa-Barbara/fishing-game", 
-            category: TestData.categories[3]
+            category: TestData.categories[2]
         },
         {
             id: 1, 
