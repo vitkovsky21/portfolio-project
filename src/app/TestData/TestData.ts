@@ -98,7 +98,7 @@ export class TestData {
       id: 10,
       image: '../../assets/images/img-5.jpg',
       title: 'My Portfolio Website :)',
-      link: 'https://portfolio-vladb.web.app/',
+      link: 'https://portfolio-vladislavbekk.web.app/',
       github: 'https://github.com/vitkovsky21/portfolio-project',
       category: TestData.categories[1],
     },
