@@ -1,85 +1,95 @@
 <section class="about" id="about">
+  <h1 class="heading">обо <span> мне </span></h1>
 
-    <h1 class="heading"> обо <span> мне </span> </h1>
-    
-    <div class="row-1">
-    
-        <div class="image">
-            <img src="../../../assets/images/home-img.jpg" alt="">
-        </div>
-    
-        <div class="content">
-            <h3> Меня зовут Владислав Беккошкаров и <br> Я веб-разработчик </h3>
-            <p>Мне нравится создавать что-то новое. Люблю работать сам и в команде над интересными проектами.</p>
-            <div class="box-container">
-                <div class="box">
-                    <p> <span> Возраст: </span> 26 </p>
-                    <p> <span> Язык: </span> Русский, English </p>
-                    <p> <span> Специальность: </span> Front-end Developer </p>
-                    <p> <span> Github: </span> https://github.com/vitkovsky21 </p>
-                </div>
-                <div class="box">
-                    <p> <span> Telegram: </span> @vladbekk1 </p>
-                    <p> <span> Телефон: </span> +7-(911)-417-37-65 </p>
-                    <p> <span> Email: </span> vladbekkoshkarov@yandex.ru </p>
-                    <p> <span> Страна: </span> Россия </p>
-                </div>
-            </div>
-            <a target="_ blank" href="../../../assets/bekkvlad-CV.pdf" class="btn">Download CV</a>
-            <a target="_ blank" href="https://github.com/vitkovsky21/" class="btn"><span class="fab fa-github"></span></a>
-            <div class="object">
-                <object>
-                    <embed src="../../../assets/images/Sertificate-1.png"  />
-                </object>
-            </div>
-        </div>
-    
+  <div class="row-1">
+    <div class="image">
+      <img src="../../../assets/images/home-img.jpg" alt="" />
     </div>
-    
-    <h1 class="heading"> <span> Мои </span> навыки </h1>
-    
-    <div class="row-2">
-    
-        <div class="skills">
-            <div class="progress">
-                <h3> Angular/Vue.js/React </h3>
-                <div class="bar"> <span></span> </div>
-            </div>
-            <div class="progress">
-                <h3> Javascript/Typescript </h3>
-                <div class="bar"> <span></span> </div>
-            </div>
-            <div class="progress">
-                <h3> HTML </h3>
-                <div class="bar"> <span></span> </div>
-            </div>
-            <div class="progress">
-                <h3> CSS/SCSS/SASS </h3>
-                <div class="bar"> <span></span> </div>
-            </div>
-            <div class="progress">
-                <h3> Git </h3>
-                <div class="bar"> <span></span> </div>
-            </div>
-            <div class="progress">
-                <h3> Webpack/Parcel </h3>
-                <div class="bar"> <span></span> </div>
-            </div>
-            <div class="progress">
-                <h3> Docker </h3>
-                <div class="bar"> <span></span> </div>
-            </div>
-            <div class="progress">
-                <h3> Websocket </h3>
-                <div class="bar"> <span></span> </div>
-            </div>
-            <div class="progress">
-                <h3> Node.js </h3>
-                <div class="bar"> <span></span> </div>
-            </div>
+
+    <div class="content">
+      <h3>
+        Меня зовут Владислав Беккошкаров и <br />
+        Я веб-разработчик
+      </h3>
+      <p>
+        Мне нравится создавать что-то новое. Люблю работать сам и в команде над
+        интересными проектами.
+      </p>
+      <div class="box-container">
+        <div class="box">
+          <p><span> Возраст: </span> 26</p>
+          <p><span> Язык: </span> Русский, English</p>
+          <p><span> Специальность: </span> Front-End Developer</p>
+          <p><span> Github: </span> https://github.com/vitkovsky21</p>
         </div>
-    
+        <div class="box">
+          <p><span> Telegram: </span> @vladbekk1</p>
+          <p><span> Телефон: </span> +7-(911)-417-37-65</p>
+          <p><span> Email: </span> vladbekkoshkarov@yandex.ru</p>
+          <p><span> Страна: </span> Россия</p>
+        </div>
+      </div>
+      <a target="_ blank" href="../../../assets/bekkvlad-CV.pdf" class="btn"
+        >Download CV</a
+      >
+      <a target="_ blank" href="https://github.com/vitkovsky21/" class="btn"
+        ><span class="fab fa-github"></span
+      ></a>
+
+      <div class="object">
+        <div *ngFor="let certificate of certificates; let i = index">
+          <img
+            (click)="zoomImage(i)"
+            class="certificate-{{ i + 1 }}"
+            [ngClass]="{ first: toggleZoomOne, second: toggleZoomTwo }"
+            src="{{ certificate.image }}"
+            alt=""
+          />
+        </div>
+      </div>
     </div>
-    
-    </section>
-    
+  </div>
+
+  <h1 class="heading"><span> Мои </span> навыки</h1>
+
+  <div class="row-2">
+    <div class="skills">
+      <div class="progress">
+        <h3>Angular/Vue.js/React</h3>
+        <div class="bar"><span></span></div>
+      </div>
+      <div class="progress">
+        <h3>Javascript/Typescript</h3>
+        <div class="bar"><span></span></div>
+      </div>
+      <div class="progress">
+        <h3>HTML</h3>
+        <div class="bar"><span></span></div>
+      </div>
+      <div class="progress">
+        <h3>CSS/SCSS/SASS</h3>
+        <div class="bar"><span></span></div>
+      </div>
+      <div class="progress">
+        <h3>Git</h3>
+        <div class="bar"><span></span></div>
+      </div>
+      <div class="progress">
+        <h3>Webpack/Parcel</h3>
+        <div class="bar"><span></span></div>
+      </div>
+      <div class="progress">
+        <h3>Docker</h3>
+        <div class="bar"><span></span></div>
+      </div>
+      <div class="progress">
+        <h3>Websocket</h3>
+        <div class="bar"><span></span></div>
+      </div>
+      <div class="progress">
+        <h3>Node.js</h3>
+        <div class="bar"><span></span></div>
+      </div>
+    </div>
+  </div>
+</section>

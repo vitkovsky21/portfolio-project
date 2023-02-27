@@ -11,6 +11,7 @@ export class DataHandlerService {
 
   sitesSubject = new BehaviorSubject<Site[]>(TestData.sites)
   categoriesSubject = new BehaviorSubject<Categories[]>(TestData.categories)
+  certificatesSubject = new BehaviorSubject(TestData.certificates)
 
   constructor() { }
 }

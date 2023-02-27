@@ -1,121 +1,252 @@
-.about .row-1{
-    display: flex;
-    flex-wrap: wrap;
-    gap:1.5rem;
-    padding-bottom: 2rem;
+.about .row-1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  height: 100%;
 }
 
-.about .row-1 .image{
-    flex:1 1 25rem;
+.about .row-1 .image {
+  flex: 1 1 25rem;
 }
 
-.about .row-1 .image img{
+.about .row-1 .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border: 1rem solid #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.about .row-1 .content {
+  flex: 1 1 50rem;
+}
+
+.about .row-1 .content h3 {
+  color: #333;
+  font-size: 3.5rem;
+}
+
+.about .row-1 .content p {
+  color: #666;
+  font-size: 1.7rem;
+  padding: 0.5rem 0;
+}
+
+.about .row-1 .content .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 0.5rem 0;
+}
+
+.about .row-1 .content .box-container .box {
+  flex: 1 1 20rem;
+}
+
+.about .row-1 .content .box-container .box span {
+  color: var(--main-color);
+}
+
+.about .row-2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.about .row-2 .skills {
+  flex: 1 1 45rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+}
+
+.about .row-2 .skills .progress {
+  padding: 1rem 0;
+}
+
+.about .row-2 .skills .progress h3 {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.7rem 0;
+  font-size: 1.7rem;
+  color: #111;
+  font-weight: 400;
+}
+
+.about .row-2 .skills .progress .bar {
+  width: 100%;
+  background: #ccc;
+  overflow: hidden;
+  height: 1rem;
+  border-radius: 50rem;
+}
+
+.about .row-2 .skills .progress .bar span {
+  display: block;
+  height: 100%;
+  background: var(--main-color);
+  border-radius: 50rem;
+}
+
+.about .row-2 .skills .progress .bar span {
+  width: 100%;
+}
+
+.about .row-2 .box-container {
+  flex: 1 1 40rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.about .row-2 .box-container .box {
+  flex: 1 1 15rem;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.about .row-2 .box-container .box h3 {
+  color: var(--main-color);
+  font-size: 3rem;
+}
+
+.about .row-2 .box-container .box p {
+  color: #666;
+  font-size: 1.7rem;
+  padding-top: 0.5rem;
+}
+
+.object {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.object div {
+  flex: 1 1 25rem;
+}
+
+.object img {
+  width: 100%;
+  height: 100%;
+  transition: 1s all ease-in-out;
+}
+
+object img:hover {
+  cursor: pointer;
+}
+
+.object .certificate-1.first {
+  transform: scale(2);
+  display: block;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -194px;
+  margin-left: -190px;
+  width: 30%;
+  height: 35%;
+}
+
+.object .certificate-2.second {
+  transform: scale(2);
+  display: block;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -194px;
+  margin-left: -190px;
+  width: 30%;
+  height: 35%;
+}
+
+@media (max-width: 1030px) {
+  .about .row-1 .image img {
     height: 100%;
-    width:100%;
-    object-fit: cover;
-    border:1rem solid #fff;
-    border-radius: .5rem;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+  }
+
+  .object .certificate-1.first {
+    transform: scale(2);
+    display: block;
+    position: fixed;
+    top: 60%;
+    left: 70%;
+    margin-top: -194px;
+    margin-left: -190px;
+    width: 30%;
+    height: 35%;
+  }
+
+  .object .certificate-2.second {
+    transform: scale(2);
+    display: block;
+    position: fixed;
+    top: 60%;
+    left: 70%;
+    margin-top: -194px;
+    margin-left: -190px;
+    width: 30%;
+    height: 35%;
+  }
 }
 
-.about .row-1 .content{
-    flex:1 1 50rem;
+@media (max-width: 780px) {
+  .about .row-1 .image img {
+    height: 50%;
+  }
+
+  .object .certificate-1.first,
+  .object .certificate-2.second {
+    top: 60%;
+    left: 55%;
+    width: 45%;
+    height: 35%;
+  }
 }
 
-.about .row-1 .content h3{
-    color:#333;
-    font-size: 3.5rem;
+@media (max-width: 750px) {
+  .about .row-1 .image img {
+    height: 100%;
+  }
 }
 
-.about .row-1 .content p{
-    color:#666;
-    font-size: 1.7rem;
-    padding:.5rem 0;
+@media (max-width: 430px) {
+  .about .row-1 .image img {
+    height: 100%;
+  }
+
+  .object .certificate-1.first,
+  .object .certificate-2.second {
+    top: 60%;
+    left: 70%;
+    width: 48%;
+    height: 25%;
+  }
 }
 
-.about .row-1 .content .box-container{
-    display: flex;
-    flex-wrap: wrap;
-    gap:1.5rem;
-    padding: 0.5rem 0;
+@media (max-width: 380px) {
+
+  .object .certificate-1.first,
+  .object .certificate-2.second {
+    top: 60%;
+    left: 77%;
+    width: 48%;
+    height: 25%;
+  }
 }
 
-.about .row-1 .content .box-container .box{
-    flex:1 1 20rem;
-}
+@media (max-width: 330px) {
 
-.about .row-1 .content .box-container .box span{
-    color:var(--main-color);
-}
-
-.about .row-2{
-    display: flex;
-    flex-wrap: wrap;
-    gap:1.5rem;
-    align-items: center;
-}
-
-.about .row-2 .skills{
-    flex: 1 1 45rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap: 1.5rem;
-}
-
-.about .row-2 .skills .progress{
-    padding:1rem 0;
-}
-
-.about .row-2 .skills .progress h3{
-    display: flex;
-    justify-content: space-between;
-    padding:.7rem 0;
-    font-size: 1.7rem;
-    color:#111;
-    font-weight: 400;
-}
-
-.about .row-2 .skills .progress .bar{
-    width:100%;
-    background:#ccc;
-    overflow:hidden;
-    height:1rem;
-    border-radius: 50rem;
-}
-
-.about .row-2 .skills .progress .bar span{
-    display:block;
-    height:100%;
-    background:var(--main-color);
-    border-radius: 50rem;
-}
-
-.about .row-2 .skills .progress .bar span{
-    width:100%;
-}
-
-.about .row-2 .box-container{
-    flex:1 1 40rem;
-    display: flex;
-    flex-wrap: wrap;
-    gap:1.5rem;
-}
-
-.about .row-2 .box-container .box{
-    flex:1 1 15rem;
-    background:#fff;
-    padding:2rem;
-    border-radius: .5rem;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
-}
-
-.about .row-2 .box-container .box h3{
-    color:var(--main-color);
-    font-size: 3rem;
-}
-
-.about .row-2 .box-container .box p{
-    color:#666;
-    font-size: 1.7rem;
-    padding-top: .5rem;
+  .object .certificate-1.first,
+  .object .certificate-2.second {
+    top: 60%;
+    left: 86%;
+    width: 48%;
+    height: 20%;
+  }
 }
