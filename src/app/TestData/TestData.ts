@@ -34,7 +34,7 @@ export class TestData {
     {
       id: 2,
       image: '../../assets/images/img-11.jpeg',
-      title: 'Highcharts Website',
+      title: 'Highcharts Website (Angular)',
       github: 'https://github.com/vitkovsky21/test-pr',
       category: TestData.categories[1],
     },
@@ -80,18 +80,18 @@ export class TestData {
     },
     {
       id: 8,
-      image: '../../assets/images/img-9.jpg',
-      title: 'Tetris Workshop',
-      link: 'https://superb-mandazi-9419a3.netlify.app/',
-      github: 'https://github.com/vitkovsky21/tetris-workshop',
+      image: '../../assets/images/img-12.jpg',
+      title: 'Highcharts Project (React)',
+      link: 'https://github.com/vitkovsky21/highcharts-react',
+      github: 'https://github.com/vitkovsky21/highcharts-react',
       category: TestData.categories[2],
     },
     {
       id: 9,
-      image: '../../assets/images/img-3.jpg',
-      title: 'Vue Cart',
-      link: 'https://master--meek-shortbread-b7c0be.netlify.app/',
-      github: 'https://master--meek-shortbread-b7c0be.netlify.app/',
+      image: '../../assets/images/img-11.jpg',
+      title: 'Products Storage (Vue3)',
+      link: 'https://master--tiny-entremet-01b306.netlify.app/',
+      github: 'https://github.com/vitkovsky21/storage-vue',
       category: TestData.categories[0],
     },
     {
@@ -101,6 +101,22 @@ export class TestData {
       link: 'https://portfolio-vladislavbekk.web.app/',
       github: 'https://github.com/vitkovsky21/portfolio-project',
       category: TestData.categories[1],
+    },
+    {
+      id: 11,
+      image: '../../assets/images/img-3.jpg',
+      title: 'Vue Cart',
+      link: 'https://master--meek-shortbread-b7c0be.netlify.app/',
+      github: 'https://github.com/vitkovsky21/vue-cart',
+      category: TestData.categories[0],
+    },
+    {
+      id: 12,
+      image: '../../assets/images/img-9.jpg',
+      title: 'Tetris Workshop',
+      link: 'https://superb-mandazi-9419a3.netlify.app/',
+      github: 'https://github.com/vitkovsky21/tetris-workshop',
+      category: TestData.categories[2],
     },
   ];
 }
